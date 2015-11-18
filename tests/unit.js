@@ -34,12 +34,12 @@ describe('unit object', function(){
   it('makes sure units are the same type', function(){
     expect(function(){
       return new Unit(5, 'em').plus(new Unit(5, 'px'));
-    }).toThrow('units must be the same type');
+    }).toThrow('units must be have same or convertable types');
   });
 
   it('makes falsey and untyped values to be null', function(){
     expect(
       new Unit('none').plus(new Unit(20, 'px'))
-    ).toEqual(new Unit(0, 'px'));
+    ).toEqual(new Unit(0));
   });
 });
