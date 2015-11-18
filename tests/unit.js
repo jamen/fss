@@ -39,4 +39,11 @@ describe('unit object', function(){
       new Unit(20, 'em').equals(new Unit(20, 'em'))
     ).toBe(true);
   });
+
+  // Cross-unit operation error
+  it('makes sure units are the same type', function(){
+    expect(function(){
+      return new Unit(5, 'em').plus(new Unit(5, 'px'));
+    }).toThrow('units must be the same type');
+  });
 });
