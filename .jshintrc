@@ -11,5 +11,6 @@
   "unused": true,
   "eqnull": true,
   "loopfunc": true,
+  "latedef": false,
   "globals": [ "define" ]
 }
