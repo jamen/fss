@@ -4,7 +4,6 @@ jest.dontMock('../lib/unit');
 describe('unit object', function(){
   const Unit = require('../lib/unit');
 
-  // Operations
   it('handles math operations between two units', function(){
     // Addition between same units
     expect(
@@ -32,10 +31,15 @@ describe('unit object', function(){
     ).toBe(true);
   });
 
-  // Cross-unit operation error
   it('makes sure units are the same type', function(){
     expect(function(){
       return new Unit(5, 'em').plus(new Unit(5, 'px'));
     }).toThrow('units must be the same type');
+  });
+
+  it('makes falsey and untyped values to be null', function(){
+    expect(
+      new Unit('none').plus(new Unit(20, 'px'))
+    ).toEqual(new Unit(0, 'px'));
   });
 });
