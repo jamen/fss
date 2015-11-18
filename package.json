@@ -4,7 +4,10 @@
   "description": "Next gen CSS.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "craze": "node bin/craze"
+  },
+  "bin": {
+    "craze": "bin/craze"
   },
   "author": "Jamen Marz",
   "license": "MIT",
