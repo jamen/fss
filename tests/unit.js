@@ -33,5 +33,10 @@ describe('unit object', function(){
     ).toEqual(
       new Unit(4, 'em')
     );
+
+    // Equality
+    expect(
+      new Unit(20, 'em').equals(new Unit(20, 'em'))
+    ).toBe(true);
   });
 });
