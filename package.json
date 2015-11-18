@@ -4,6 +4,7 @@
   "description": "Next gen CSS.",
   "main": "index.js",
   "scripts": {
+    "test": "jest tests",
     "craze": "node bin/craze"
   },
   "bin": {
@@ -12,7 +13,9 @@
   "author": "Jamen Marz",
   "license": "MIT",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "jest-cli": "latest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jamen/craze.git"
@@ -24,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/jamen/craze/issues"
   },
-  "homepage": "https://github.com/jamen/craze#readme"
+  "homepage": "https://github.com/jamen/craze#readme",
+  "jest": {
+    "testDirectoryName": "tests"
+  }
 }

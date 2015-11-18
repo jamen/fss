@@ -12,5 +12,6 @@
   "eqnull": true,
   "loopfunc": true,
   "latedef": false,
-  "globals": [ "define" ]
+  "jasmine": true,
+  "globals": [ "jest" ]
 }
