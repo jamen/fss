@@ -1,0 +1,5 @@
+# Misc
+.DS_Store
+._*
+*.log
+node_modules
