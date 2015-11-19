@@ -5,28 +5,31 @@ jest.dontMock('../lib/value');
 describe('Value object', function(){
   const Value = require('../lib/value');
 
-  it('handles math operations between two units', function(){
-    // Addition between same units
+  it('adds two values', () => {
     expect(
       new Value(10, 'px').plus(new Value(13, 'px'))
     ).toEqual(new Value(23, 'px'));
+  });
 
-    // Subtaction
+  it('subtacts two values', () => {
     expect(
       new Value(23, 'px').minus(new Value(10, 'px'))
     ).toEqual(new Value(13, 'px'));
+  });
 
-    // Multiplication
+  it('multiplies two values', () => {
     expect(
       new Value(5, 'em').times(new Value(4, 'em'))
     ).toEqual(new Value(20, 'em'));
+  });
 
-    // Division
+  it('divides two values', () => {
     expect(
       new Value(20, 'em').divide(new Value(5, 'em'))
     ).toEqual(new Value(4, 'em'));
+  });
 
-    // Equality
+  it('compares two values', () => {
     expect(
       new Value(20, 'em').equals(new Value(20, 'em'))
     ).toBe(true);
