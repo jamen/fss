@@ -14,7 +14,7 @@ $ npm install -g craze
 Programmatic usage:
 ```javascript
 Selector('.foo, .bar', [
-  Property('background-color', new Value('#000')),
+  Property('background-color', Value('#000')),
   Property('border', [
     Value(1, 'px'),
     Value('solid'),
