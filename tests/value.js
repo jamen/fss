@@ -1,3 +1,4 @@
+// jshint ignore: start
 'use strict';
 jest.dontMock('../lib/value');
 
