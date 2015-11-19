@@ -1,7 +1,7 @@
 // jshint ignore: start
 'use strict';
 jest.dontMock('../lib/property');
-jest.dontMock('../lib/value')
+jest.dontMock('../lib/value');
 
 describe('Property object', function(){
   const Property = require('../lib/property'),
