@@ -12,7 +12,9 @@
   },
   "author": "Jamen Marz",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "spv": "latest"
+  },
   "devDependencies": {
     "jest-cli": "latest"
   },
