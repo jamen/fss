@@ -9,25 +9,3 @@ This allows more opportunities for middleware to interact with the CSS directly 
 ```
 $ npm install -g craze
 ```
-
-## Example
-Programmatic usage:
-```javascript
-Selector('.foo, .bar', [
-  Property('background-color', Value('#000')),
-  Property('border', [
-    Value(1, 'px'),
-    Value('solid'),
-    Value('#FFF')
-  ])
-]);
-```
-
-Compiled:
-
-```css
-.foo, .bar {
-  background-color:#000;
-  border:1px solid #FFF;
-}
-```
