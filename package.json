@@ -4,7 +4,7 @@
   "description": "Next gen CSS.",
   "main": "index.js",
   "scripts": {
-    "test": "jest tests",
+    "test": "ava test",
     "craze": "node bin/craze"
   },
   "bin": {
@@ -16,7 +16,7 @@
     "rpv": "latest"
   },
   "devDependencies": {
-    "jest-cli": "latest"
+    "ava": "latest"
   },
   "repository": {
     "type": "git",
@@ -24,13 +24,12 @@
   },
   "keywords": [
     "css",
-    "preprocessor"
+    "preprocessor",
+    "javascript",
+    "interpolation"
   ],
   "bugs": {
     "url": "https://github.com/jamen/craze/issues"
   },
   "homepage": "https://github.com/jamen/craze#readme",
-  "jest": {
-    "testDirectoryName": "tests"
-  }
 }
