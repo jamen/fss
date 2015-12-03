@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "ava test",
-    "craze": "node bin/craze"
+    "craze": "node bin/craze",
+    "refresh_rpv": "rm -rf node_modules/rpv; npm install"
   },
   "bin": {
     "craze": "bin/craze"
