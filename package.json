@@ -1,36 +1,27 @@
 {
   "name": "craze",
-  "version": "1.0.0",
-  "description": "Next gen CSS.",
-  "main": "index.js",
-  "scripts": {
-    "test": "ava test",
-    "craze": "node bin/craze",
-    "refresh_rpv": "rm -rf node_modules/rpv; npm install"
-  },
-  "bin": {
-    "craze": "bin/craze"
-  },
-  "author": "Jamen Marz",
-  "license": "MIT",
-  "dependencies": {
-    "rpv": "latest"
-  },
-  "devDependencies": {
-    "ava": "latest"
-  },
+  "author": "Jamen Marzonie",
+  "version": "0.0.0",
+  "description": "Next generation CSS",
+  "main": "lib",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamen/craze.git"
+    "url": "https://github.com/jamen/craze"
   },
-  "keywords": [
-    "css",
-    "preprocessor",
-    "javascript",
-    "interpolation"
+  "scripts": {
+    "test": "eslint resolve tokenize test transform index.js; tape 'test/*.js'"
+  },
+  "files": [
+    "lib",
+    "index.js"
   ],
-  "bugs": {
-    "url": "https://github.com/jamen/craze/issues"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-config-google": "^0.5.0",
+    "tape": "^4.5.1"
   },
-  "homepage": "https://github.com/jamen/craze#readme"
+  "dependencies": {
+    "guru": "^0.1.4"
+  }
 }
