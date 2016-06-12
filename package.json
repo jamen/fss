@@ -1,12 +1,12 @@
 {
-  "name": "craze",
+  "name": "fss",
   "author": "Jamen Marzonie",
   "version": "0.0.0",
   "description": "Next generation CSS",
   "main": "lib",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jamen/craze"
+    "url": "https://github.com/jamen/fss"
   },
   "scripts": {
     "test": "eslint resolve tokenize test transform index.js; tape 'test/*.js'"
